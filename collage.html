@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Collage</title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background: red;
+		}
+		.container {
+			background: white;
+			min-height: 100vh;
+			display: grid;
+			grid-template-columns: 2fr 1fr 1fr 2fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			grid-template-areas:
+				"p1 p2 p2 p3"
+				"p4 p4 p5 p5"
+				"p6 p6 p7 p7";
+			grid-gap: 10px;
+			padding: 10px;
+		}
+		#photo1 {
+			grid-area: p1;
+			background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-y9wWS4ec8jbEhk75fKbJOTWm17lc7Z7CdkIjPrU2PvNmZeknXA);
+			background-size: cover;
+			background-position: center;
+		}
+		#photo2 {
+			grid-area: p2;
+			background: url(https://i.pinimg.com/736x/e2/79/08/e279085554b4a9e8a91d56e58c222d79.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+		#photo3 {
+			grid-area: p3;
+			background: url(https://cdn-az.allevents.in/banners/a98430341596f2c6938e1d6075774190);
+			background-size: cover;
+			background-position: center;
+		}
+		#photo4 {
+			grid-area: p4;
+			background: url(https://s14.favim.com/orig/161210/aesthetic-cream-cute-dog-Favim.com-4924129.jpeg);
+			background-size: cover;
+			background-position: center;
+		}
+		#photo5 {
+			grid-area: p5;
+			background: url(http://78.media.tumblr.com/c74e03df624108f52ebe35c2b28f1348/tumblr_oz9cdwdNNX1u4nbmvo1_500.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+		#photo6 {
+			grid-area: p6;
+			background: url(https://i.imgur.com/nKuYESr.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+		#photo7 {
+			grid-area: p7;
+			background: url(https://i.imgur.com/N4ZWxu2.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+		.item {
+			background: blue;
+			min-height: 100px;
+			min-width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item" id="photo1">
+		</div>
+		<div class="item" id="photo2">
+		</div>
+		<div class="item" id="photo3">
+		</div>
+		<div class="item" id="photo4">
+		</div>
+		<div class="item" id="photo5">
+		</div>
+		<div class="item" id="photo6">
+		</div>
+		<div class="item" id="photo7">
+		</div>
+	</div>
+</body>
+</html>
